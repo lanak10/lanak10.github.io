@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate's Plank Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>Pirate's Plank</h1>
+        <p id="main-intro">Guess the pirate-themed word to save the prisoner before he's pushed off the plank! <br> ---The first player to get 15 points wins the game and saves the prisoner's life--- </p>
+    </div>
+
+    <div class="scoreboard">
+        <div class="wrongScore1 newClass">Player 1 <br> Wrong Guesses: <span id="mistakes1">0</span> of <span id="maxWrong">5</span></div>
+
+        <div class="scoreContainer">
+            <div id="p1-score-text">Player 1 Score:</div>
+            <div id="p1-score-counter">0</div>
+        </div>
+
+        <div class="wrongScore2">Player 2 <br> Wrong Guesses: <span id="mistakes2">0</span> of <span id="maxWrong">5</span></div>
+
+        <div class="scoreContainer">
+            <div id="p2-score-text">Player 2 Score:</div>
+            <div id="p2-score-counter">0</div>
+        </div>
+    </div>
+
+    <div class="gameElements">
+        <p id="randomWord">Randomly generated word here</p>
+        <div id="alphabetKeyboard">placeholder</div>
+        <p id="winlosetext"></p>
+        <div id="buttons">
+        <button id="reset">Reset</button>
+        <button id="newRound">New Word</button>
+        <button id="newGame">New Game</button></div>
+    </div>
+
+    <div class="gridContainer">
+        <img id="prisoner" src="images/prisoner.png" alt="Prisoner walking plank">
+    </div>
+
+</body>
+
+</html>
